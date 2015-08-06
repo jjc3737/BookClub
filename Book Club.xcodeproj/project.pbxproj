@@ -22,8 +22,8 @@
 		3F0DE63B1B72E01900B86BDA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE63A1B72E01900B86BDA /* ProfileViewController.m */; };
 		3F0DE63E1B72E6D900B86BDA /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE63D1B72E6D900B86BDA /* Comment.m */; };
 		3F0DE6411B72E6DA00B86BDA /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6401B72E6DA00B86BDA /* Book.m */; };
-		3F0DE6441B72E6DA00B86BDA /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6431B72E6DA00B86BDA /* Friend.m */; };
 		3F0DE6471B72EA9B00B86BDA /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6461B72EA9B00B86BDA /* CommentsViewController.m */; };
+		3F0DE64A1B7314CB00B86BDA /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6491B7314CB00B86BDA /* Friend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +64,10 @@
 		3F0DE63D1B72E6D900B86BDA /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		3F0DE63F1B72E6DA00B86BDA /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		3F0DE6401B72E6DA00B86BDA /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		3F0DE6421B72E6DA00B86BDA /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
-		3F0DE6431B72E6DA00B86BDA /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		3F0DE6451B72EA9B00B86BDA /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
 		3F0DE6461B72EA9B00B86BDA /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
+		3F0DE6481B7314CB00B86BDA /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		3F0DE6491B7314CB00B86BDA /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +168,8 @@
 		3F0DE6231B72C2C000B86BDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3F0DE6421B72E6DA00B86BDA /* Friend.h */,
-				3F0DE6431B72E6DA00B86BDA /* Friend.m */,
+				3F0DE6481B7314CB00B86BDA /* Friend.h */,
+				3F0DE6491B7314CB00B86BDA /* Friend.m */,
 				3F0DE63F1B72E6DA00B86BDA /* Book.h */,
 				3F0DE6401B72E6DA00B86BDA /* Book.m */,
 				3F0DE63C1B72E6D900B86BDA /* Comment.h */,
@@ -282,10 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0DE6441B72E6DA00B86BDA /* Friend.m in Sources */,
 				3F0DE6261B72C2F500B86BDA /* Friend+Model.m in Sources */,
 				3F0DE6181B72BD5200B86BDA /* FriendsViewController.m in Sources */,
 				3F0DE63E1B72E6D900B86BDA /* Comment.m in Sources */,
+				3F0DE64A1B7314CB00B86BDA /* Friend.m in Sources */,
 				3F0DE63B1B72E01900B86BDA /* ProfileViewController.m in Sources */,
 				3F0DE6411B72E6DA00B86BDA /* Book.m in Sources */,
 				3F0DE61C1B72BF3100B86BDA /* AddFriendsTableViewController.m in Sources */,

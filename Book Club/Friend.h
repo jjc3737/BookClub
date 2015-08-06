@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * isChosen;
+@property (nonatomic, retain) NSNumber * bookCount;
 @property (nonatomic, retain) NSSet *books;
 @end
 

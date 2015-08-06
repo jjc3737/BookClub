@@ -36,7 +36,13 @@
 
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:friendEntityName];
     request.predicate = [NSPredicate predicateWithFormat:@"isChosen = %@", [NSNumber numberWithInt:1]];
-    self.friends = [self.moc executeFetchRequest:request error:NULL];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"bookCount" ascending:NO];
+    request.sortDescriptors = @[sortDescriptor];
+                                    
+    
+   self.friends = [self.moc executeFetchRequest:request error:NULL];
+
     
     [self.tableView reloadData];
 

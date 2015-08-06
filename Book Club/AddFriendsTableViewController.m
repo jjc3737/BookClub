@@ -45,6 +45,7 @@
             Friend *friend = [NSEntityDescription insertNewObjectForEntityForName:friendEntityName inManagedObjectContext:self.moc];
             friend.name = givenName;
             friend.isChosen = 0;
+            friend.bookCount = [NSNumber numberWithDouble:0.0];
             [self.originalFriendsList addObject:friend];
         }
         

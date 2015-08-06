@@ -14,6 +14,7 @@
 
 @dynamic name;
 @dynamic isChosen;
+@dynamic bookCount;
 @dynamic books;
 
 @end

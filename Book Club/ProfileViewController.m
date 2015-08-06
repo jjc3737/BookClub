@@ -69,6 +69,9 @@
         book.author = enteredAuthor;
         [book addFriendsObject:self.friend];
         
+        double bookCount = [self.friend.bookCount doubleValue];
+        self.friend.bookCount = [NSNumber numberWithDouble:(bookCount +1)];
+        
         [self.friend.managedObjectContext save:nil];
         [self loadBooks];
     }];
