@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "Book.h"
 #import "Friend+Model.h"
+#import "CommentsViewController.h"
 
 @interface ProfileViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,15 +24,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.title = self.friend.name;
+    [self setUpLabels];
     [self loadBooks];
 }
 
+-(void)setUpLabels {
+    self.title = self.friend.name;
+    self.nameLabel.text = self.friend.name;
+}
 -(void)loadBooks {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Book"];
     request.predicate = [NSPredicate predicateWithFormat:@"friends CONTAINS%@", self.friend];
     self.books = [self.friend.managedObjectContext executeFetchRequest:request error:NULL];
+    self.numberOfBooksLabel.text = [NSString stringWithFormat:@"Number of Books: %lu", self.books.count];
     
     [self.tableView reloadData];
 }
@@ -92,14 +97,17 @@
 }
 
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+   
+    NSIndexPath *indexPath  = [self.tableView indexPathForCell:sender];
+    
+    CommentsViewController *vc = segue.destinationViewController;
+    vc.book = self.books[indexPath.row];
 }
-*/
+
 
 @end

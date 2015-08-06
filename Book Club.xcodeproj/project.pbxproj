@@ -23,6 +23,7 @@
 		3F0DE63E1B72E6D900B86BDA /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE63D1B72E6D900B86BDA /* Comment.m */; };
 		3F0DE6411B72E6DA00B86BDA /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6401B72E6DA00B86BDA /* Book.m */; };
 		3F0DE6441B72E6DA00B86BDA /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6431B72E6DA00B86BDA /* Friend.m */; };
+		3F0DE6471B72EA9B00B86BDA /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6461B72EA9B00B86BDA /* CommentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		3F0DE6401B72E6DA00B86BDA /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		3F0DE6421B72E6DA00B86BDA /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		3F0DE6431B72E6DA00B86BDA /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		3F0DE6451B72EA9B00B86BDA /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		3F0DE6461B72EA9B00B86BDA /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				3F0DE61B1B72BF3100B86BDA /* AddFriendsTableViewController.m */,
 				3F0DE6391B72E01900B86BDA /* ProfileViewController.h */,
 				3F0DE63A1B72E01900B86BDA /* ProfileViewController.m */,
+				3F0DE6451B72EA9B00B86BDA /* CommentsViewController.h */,
+				3F0DE6461B72EA9B00B86BDA /* CommentsViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				3F0DE6411B72E6DA00B86BDA /* Book.m in Sources */,
 				3F0DE61C1B72BF3100B86BDA /* AddFriendsTableViewController.m in Sources */,
 				3F0DE6291B72C5F000B86BDA /* ListOfNewFriends.m in Sources */,
+				3F0DE6471B72EA9B00B86BDA /* CommentsViewController.m in Sources */,
 				3F0DE5F31B72BBDB00B86BDA /* AppDelegate.m in Sources */,
 				3F0DE5F61B72BBDB00B86BDA /* Book_Club.xcdatamodeld in Sources */,
 				3F0DE5F01B72BBDB00B86BDA /* main.m in Sources */,
