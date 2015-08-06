@@ -1,5 +1,5 @@
 //
-//  FriendsViewController.h
+//  BooksViewController.h
 //  Book Club
 //
 //  Created by Jaehee Chung on 8/5/15.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendsViewController : UIViewController
+@class Friend;
+@interface ProfileViewController : UIViewController
 
-
-@property NSManagedObjectContext *moc;
-
+@property Friend *friend; 
 
 @end

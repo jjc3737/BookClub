@@ -15,6 +15,14 @@
 		3F0DE6011B72BBDB00B86BDA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0DE5FF1B72BBDB00B86BDA /* LaunchScreen.xib */; };
 		3F0DE60D1B72BBDB00B86BDA /* Book_ClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE60C1B72BBDB00B86BDA /* Book_ClubTests.m */; };
 		3F0DE6181B72BD5200B86BDA /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6171B72BD5200B86BDA /* FriendsViewController.m */; };
+		3F0DE61C1B72BF3100B86BDA /* AddFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE61B1B72BF3100B86BDA /* AddFriendsTableViewController.m */; };
+		3F0DE61F1B72C1B400B86BDA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0DE61D1B72BFEF00B86BDA /* CoreData.framework */; };
+		3F0DE6261B72C2F500B86BDA /* Friend+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6251B72C2F500B86BDA /* Friend+Model.m */; };
+		3F0DE6291B72C5F000B86BDA /* ListOfNewFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6281B72C5F000B86BDA /* ListOfNewFriends.m */; };
+		3F0DE63B1B72E01900B86BDA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE63A1B72E01900B86BDA /* ProfileViewController.m */; };
+		3F0DE63E1B72E6D900B86BDA /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE63D1B72E6D900B86BDA /* Comment.m */; };
+		3F0DE6411B72E6DA00B86BDA /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6401B72E6DA00B86BDA /* Book.m */; };
+		3F0DE6441B72E6DA00B86BDA /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DE6431B72E6DA00B86BDA /* Friend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,21 @@
 		3F0DE60C1B72BBDB00B86BDA /* Book_ClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book_ClubTests.m; sourceTree = "<group>"; };
 		3F0DE6161B72BD5200B86BDA /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
 		3F0DE6171B72BD5200B86BDA /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		3F0DE61A1B72BF3100B86BDA /* AddFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsTableViewController.h; sourceTree = "<group>"; };
+		3F0DE61B1B72BF3100B86BDA /* AddFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsTableViewController.m; sourceTree = "<group>"; };
+		3F0DE61D1B72BFEF00B86BDA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3F0DE6241B72C2F500B86BDA /* Friend+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Friend+Model.h"; sourceTree = "<group>"; };
+		3F0DE6251B72C2F500B86BDA /* Friend+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Friend+Model.m"; sourceTree = "<group>"; };
+		3F0DE6271B72C5F000B86BDA /* ListOfNewFriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfNewFriends.h; sourceTree = "<group>"; };
+		3F0DE6281B72C5F000B86BDA /* ListOfNewFriends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfNewFriends.m; sourceTree = "<group>"; };
+		3F0DE6391B72E01900B86BDA /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		3F0DE63A1B72E01900B86BDA /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		3F0DE63C1B72E6D900B86BDA /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		3F0DE63D1B72E6D900B86BDA /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		3F0DE63F1B72E6DA00B86BDA /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		3F0DE6401B72E6DA00B86BDA /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		3F0DE6421B72E6DA00B86BDA /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		3F0DE6431B72E6DA00B86BDA /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0DE61F1B72C1B400B86BDA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +89,7 @@
 		3F0DE5E11B72BBDB00B86BDA = {
 			isa = PBXGroup;
 			children = (
+				3F0DE61D1B72BFEF00B86BDA /* CoreData.framework */,
 				3F0DE5EC1B72BBDB00B86BDA /* Book Club */,
 				3F0DE6091B72BBDB00B86BDA /* Book ClubTests */,
 				3F0DE5EB1B72BBDB00B86BDA /* Products */,
@@ -85,6 +110,7 @@
 			children = (
 				3F0DE5F11B72BBDB00B86BDA /* AppDelegate.h */,
 				3F0DE5F21B72BBDB00B86BDA /* AppDelegate.m */,
+				3F0DE6231B72C2C000B86BDA /* Models */,
 				3F0DE6191B72BD5500B86BDA /* View Controllers */,
 				3F0DE5FA1B72BBDB00B86BDA /* Main.storyboard */,
 				3F0DE5FD1B72BBDB00B86BDA /* Images.xcassets */,
@@ -126,8 +152,29 @@
 			children = (
 				3F0DE6161B72BD5200B86BDA /* FriendsViewController.h */,
 				3F0DE6171B72BD5200B86BDA /* FriendsViewController.m */,
+				3F0DE61A1B72BF3100B86BDA /* AddFriendsTableViewController.h */,
+				3F0DE61B1B72BF3100B86BDA /* AddFriendsTableViewController.m */,
+				3F0DE6391B72E01900B86BDA /* ProfileViewController.h */,
+				3F0DE63A1B72E01900B86BDA /* ProfileViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3F0DE6231B72C2C000B86BDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F0DE6421B72E6DA00B86BDA /* Friend.h */,
+				3F0DE6431B72E6DA00B86BDA /* Friend.m */,
+				3F0DE63F1B72E6DA00B86BDA /* Book.h */,
+				3F0DE6401B72E6DA00B86BDA /* Book.m */,
+				3F0DE63C1B72E6D900B86BDA /* Comment.h */,
+				3F0DE63D1B72E6D900B86BDA /* Comment.m */,
+				3F0DE6241B72C2F500B86BDA /* Friend+Model.h */,
+				3F0DE6251B72C2F500B86BDA /* Friend+Model.m */,
+				3F0DE6271B72C5F000B86BDA /* ListOfNewFriends.h */,
+				3F0DE6281B72C5F000B86BDA /* ListOfNewFriends.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0DE6441B72E6DA00B86BDA /* Friend.m in Sources */,
+				3F0DE6261B72C2F500B86BDA /* Friend+Model.m in Sources */,
 				3F0DE6181B72BD5200B86BDA /* FriendsViewController.m in Sources */,
+				3F0DE63E1B72E6D900B86BDA /* Comment.m in Sources */,
+				3F0DE63B1B72E01900B86BDA /* ProfileViewController.m in Sources */,
+				3F0DE6411B72E6DA00B86BDA /* Book.m in Sources */,
+				3F0DE61C1B72BF3100B86BDA /* AddFriendsTableViewController.m in Sources */,
+				3F0DE6291B72C5F000B86BDA /* ListOfNewFriends.m in Sources */,
 				3F0DE5F31B72BBDB00B86BDA /* AppDelegate.m in Sources */,
 				3F0DE5F61B72BBDB00B86BDA /* Book_Club.xcdatamodeld in Sources */,
 				3F0DE5F01B72BBDB00B86BDA /* main.m in Sources */,

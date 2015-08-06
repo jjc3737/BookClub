@@ -1,5 +1,5 @@
 //
-//  FriendsViewController.h
+//  AddFriendsTableViewController.h
 //  Book Club
 //
 //  Created by Jaehee Chung on 8/5/15.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendsViewController : UIViewController
+
+
+@interface AddFriendsTableViewController : UITableViewController
 
 
 @property NSManagedObjectContext *moc;

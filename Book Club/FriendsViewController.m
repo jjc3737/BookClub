@@ -7,8 +7,16 @@
 //
 
 #import "FriendsViewController.h"
+#import <CoreData/CoreData.h>
+#import "Friend+Model.h"
+#import "AddFriendsTableViewController.h"
+#import "ProfileViewController.h"
 
-@interface FriendsViewController ()
+
+@interface FriendsViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) NSArray *friends;
 
 @end
 
@@ -16,22 +24,58 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidAppear:(BOOL)animated  {
+     [self loadFriends];
 }
 
-/*
+
+-(void)loadFriends{
+
+    NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:friendEntityName];
+    request.predicate = [NSPredicate predicateWithFormat:@"isChosen = %@", [NSNumber numberWithInt:1]];
+    self.friends = [self.moc executeFetchRequest:request error:NULL];
+    
+    [self.tableView reloadData];
+
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.friends.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell"];
+    
+    Friend *friend = self.friends[indexPath.row];
+    cell.textLabel.text = friend.name;
+    
+    
+    return cell;
+}
+
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"addFriend"]) {
+        AddFriendsTableViewController *vcOne = segue.destinationViewController;
+        vcOne.moc = self.moc;
+    } else {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        Friend *friend = self.friends[indexPath.row];
+        
+        ProfileViewController *vcTwo = segue.destinationViewController;
+        vcTwo.friend = friend;
+    }
+    
 }
-*/
+
 
 @end
